@@ -1,0 +1,27 @@
+
+> javascript-lab@1.0.0 test
+> mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json
+
+
+
+  index.js
+    1) should change the text on the page when DOM content has loaded
+
+
+  0 passing (204ms)
+  1 failing
+
+  1) index.js
+       should change the text on the page when DOM content has loaded:
+
+      AssertionError: expected 'JavaScript is so cool. It lets me add text to my page programmatically.' to equal 'This is really cool!'
+      + expected - actual
+
+      -JavaScript is so cool. It lets me add text to my page programmatically.
+      +This is really cool!
+      
+      at Context.<anonymous> (test/indexTest.js:13:11)
+      at processImmediate (node:internal/timers:464:21)
+
+
+
